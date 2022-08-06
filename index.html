@@ -445,6 +445,80 @@
             <use href="./images/sprite/sprite.svg#close"></use>
           </svg>
         </button>
+        <!-- form for modal -->
+
+        <form class="modal-form">
+          <p class="text-form">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="form-lable">
+            <span class="form-name">Имя</span>
+            <span class="form-modal-icon">
+              <input
+                class="form-input"
+                type="text"
+                name="user_name"
+                required
+                pattern="^[a-zA-Zа-яА-Я]+"
+                minlength="2"
+              />
+
+              <svg class="modal-icon" width="18px" height="18px">
+                <use href="./images/sprite/sprite.svg#name"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="form-lable">
+            <span class="form-name">Телефон</span>
+            <span class="form-modal-icon">
+              <input
+                class="form-input"
+                type="tel"
+                name="user_phone"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+
+              <svg class="modal-icon" width="18px" height="18px">
+                <use href="./images/sprite/sprite.svg#tel"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="form-lable">
+            <span class="form-name">Почта</span>
+            <span class="form-modal-icon">
+              <input
+                class="form-input"
+                type="email"
+                name="user_email"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              />
+
+              <svg class="modal-icon" width="18px" height="18px">
+                <use href="./images/sprite/sprite.svg#mail"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="form-lable">
+            <span class="form-name">Комментарий</span>
+            <textarea
+              name="user-message"
+              class="form-texterea"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+
+          <input
+            id="user-policy"
+            type="checkbox"
+            name="user-policy"
+            class="form-checkbox visually-hidden"
+          />
+          <label for="user-policy" class="form-check-desk"
+            >Соглашаюсь с рассылкой и принимаю&nbsp;<a href="">Условия договор</a>
+          </label>
+          <button type="submit" class="btm-form-submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
