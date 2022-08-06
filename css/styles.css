@@ -919,7 +919,7 @@ button {
 }
 
 .form-checkbox:checked + .form-check-desk::before {
-  background-image: url(/images/sprite/check.svg);
+  background-image: url(../images/sprite/check.svg);
   background-color: #2196f3;
   box-shadow: var(--transition-speed), background-image var(--transition-speed),
     background-color var(--transition-speed);
